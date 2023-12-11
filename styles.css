@@ -1,0 +1,223 @@
+pre {
+white-space: pre-wrap;
+}
+.site-main ul li:first-child, .stores ol li p {
+margin-top: 0 !important;
+}
+.home-webdevelopment ul li:after {
+content: none !important;
+}
+.section-content {
+overflow: hidden;
+}
+
+.info-buttons-wrapper .container a {
+opacity: 0;
+}
+.page-banner h2 {
+padding-left: 0rem !important; 
+margin-top: 20px !important;
+margin-bottom: 25px !important;
+}
+
+#sidebar {
+-webkit-transform: translateX(-100%);
+-ms-transform: translateX(-100%);
+transform: translateX(-100%);
+}
+
+.cookie-law {
+visibility: hidden;
+opacity: 0;
+}
+
+.span.bigletter.animate-bigletter {
+color: transparent;
+}
+
+.temp-hide {
+-webkit-transform: translate(0, 100%);
+-ms-transform: translate(0, 100%);
+transform: translate(0, 100%)
+}
+
+.vert-loader {
+position: fixed;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+height: 0;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 99999;
+}
+
+.vert-loader.show .vert-loader-bar {
+height: 100%;
+}
+
+.vert-loader.active {
+height: 100%;
+}
+
+.vert-loader-bar {
+background-color: #333;
+width: -webkit-calc(100% / 6);
+width: calc(100% / 6);
+height: 0;
+-webkit-transition: height 0.3s;
+transition: height 0.3s;
+}
+
+.vert-loader-bar.bar-0 {
+-webkit-transition-delay: 0s;
+transition-delay: 0s;
+}
+
+.vert-loader-bar.bar-1 {
+-webkit-transition-delay: 30ms;
+transition-delay: 30ms;
+}
+
+.vert-loader-bar.bar-2 {
+-webkit-transition-delay: 60ms;
+transition-delay: 60ms;
+}
+
+.vert-loader-bar.bar-3 {
+-webkit-transition-delay: 90ms;
+transition-delay: 90ms;
+}
+
+.vert-loader-bar.bar-4 {
+-webkit-transition-delay: 120ms;
+transition-delay: 120ms;
+}
+
+.vert-loader-bar.bar-5 {
+-webkit-transition-delay: 150ms;
+transition-delay: 150ms;
+}
+
+* {
+	font-family: montserrat;
+}
+.wrapper {
+    position: relative;
+    height: 100vh;
+}
+
+.box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ee0979, #ff6a00);
+    z-index: 5;
+}
+
+.single-box {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    background-size: 50% 80px;
+    animation: animate 18s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+}
+
+.banner {
+    position: absolute;
+    z-index: 99;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.banner a {
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+}
+.form-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('./images/chicken.webp');
+    cursor: pointer
+}
+
+/* 600 to X */
+@media (max-width:640px) {
+.page-banner.home-banner>.container {
+margin-top: 100px !important;
+}}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #a2a1a1; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    /* background: url('./images/chicken2.png') */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    /* background: url('./images/chicken2.png') */
+  }
